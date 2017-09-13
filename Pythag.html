@@ -1,0 +1,22 @@
+<html>
+  <head></head>
+<body>
+  <h1>A:</h1>
+<input type="number"id="A">
+<h1>B:</h1>
+<input type="number"id="B">
+<br>
+<br>
+<h1 id="C"></h1>
+<button onclick="pythag()">Show C</button>
+  <script>
+function pythag(){
+var a = A.value;
+var b = B.value;
+var c = Math.pow(a,2) + Math.pow(b,2);
+document.getElementById('C').innerHTML = Math.sqrt(c);
+}
+
+  </script>
+</body>
+</html>
